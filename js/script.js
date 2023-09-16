@@ -354,7 +354,7 @@ async function displaySlider() {
 
     div.innerHTML = `          
       <a href="movie-details.html?id=${nowPlaying.id}">
-        <img src="https://image.tmdb.org/t/p/w500${nowPlaying.poster_path}" 
+        <img src="https://image.tmdb.org/t/p/w300${nowPlaying.poster_path}" 
             alt="${nowPlaying.title}" />
       </a>
       <h4 class="swiper-rating">
@@ -383,7 +383,7 @@ function initSwiper() {
         slidesPerView: 3,
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 8,
       },
     },
   });
